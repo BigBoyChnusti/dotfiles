@@ -1,0 +1,142 @@
+// -*- mode: json -*-
+
+{
+	"layer": "top",
+	"position": "top",
+
+	"modules-left": [
+		"hyprland/workspaces",
+	],
+	"modules-center": [
+		"clock#1",
+		"clock#2",
+		"clock#3"
+	],
+	"modules-right": [
+	  "custom/spotify",
+		"pulseaudio",
+		"memory",
+		"cpu",
+		"disk",
+		"custom/notification",
+		"tray",
+		"custom/power"
+
+],
+
+	"custom/left-arrow-dark": {
+		"format": "",
+		"tooltip": false
+	},
+	"custom/left-arrow-light": {
+		"format": "◖",
+		"tooltip": false
+	},
+	"custom/right-arrow-dark": {
+		"format": "◗",
+		"tooltip": false
+	},
+	"custom/right-arrow-light": {
+		"format": "◗",
+		"tooltip": false
+	},
+
+	"hyprland/workspaces": {
+		"disable-scroll": true,
+		"format": "{name}"
+	},
+
+	"clock#1": {
+		"format": "{:%a}",
+		"tooltip": false
+	},
+	"clock#2": {
+		"format": "{:%H:%M}",
+		"tooltip": false
+	},
+	"clock#3": {
+		"format": "{:%m-%d}",
+		"tooltip": false
+	},
+
+	"pulseaudio": {
+		"format": "{icon}  {volume:2}%",
+		"format-bluetooth": "{icon}  {volume}%",
+		"format-muted": "MUTE",
+		"format-icons": {
+			"headphones": "",
+			"default": [
+				"",
+				""
+			]
+		},
+		"scroll-step": 5,
+		"on-click": "pamixer -t",
+		"on-click-right": "pavucontrol"
+	},
+	"memory": {
+		"interval": 5,
+		"format": "RAM {}%"
+	},
+	"cpu": {
+		"interval": 5,
+		"format": "CPU{usage:2}%"
+	},
+	"battery": {
+		"states": {
+			"good": 95,
+			"warning": 30,
+			"critical": 15
+		},
+		"format": "{icon} {capacity}%",
+		"format-icons": [
+			"",
+			"",
+			"",
+			"",
+			""
+		]
+	},
+	"disk": {
+		"interval": 5,
+		"format": "Disk {percentage_used:2}%",
+		"path": "/"
+	},
+	"tray": {
+		"icon-size": 20
+	},
+  "custom/notification": {
+    "tooltip": false,
+    "format": "{icon}",
+    "format-icons": {
+      "notification": "<span foreground='red'><sup></sup></span>",
+      "none": "",
+      "dnd-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-none": "",
+      "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+      "inhibited-none": "",
+      "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-inhibited-none": ""
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true
+    },
+  "custom/spotify": {
+       "interval": 1,
+       "return-type": "json",
+       "exec": "waybar_media_display",
+       "exec-if": "pgrep spotify",
+       "on-click":"playerctl --player=spotify play-pause",
+       "escape": true
+
+    },
+	"custom/power": {
+		"format": " ⏻ ",
+        	"tooltip": false,
+        	"on-click": "wlogout --protocol layer-shell -b 2"
+    }
+}

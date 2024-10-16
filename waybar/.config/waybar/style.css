@@ -40,8 +40,9 @@ window#waybar {
 #workspaces button.active {
     color: #fb4934;
 }
-#workspaces button.hover {
-    color: #ffffff;
+#workspaces button:hover {
+    background: transparent;
+    border: 0.5px solid #cc241d;
 }
 #pulseaudio {
     color: #689d6a;

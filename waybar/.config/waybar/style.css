@@ -18,6 +18,7 @@ window#waybar {
     background: #1d2021;
 }
 
+#network,
 #clock.1,
 #clock.2,
 #clock.3,
@@ -61,6 +62,7 @@ window#waybar {
 }
 
 #clock,
+#network,
 #custom-notification,
 #custom-spotify,
 #pulseaudio,

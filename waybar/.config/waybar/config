@@ -18,6 +18,7 @@
 		"memory",
 		"cpu",
 		"disk",
+		"network",
 		"custom/notification",
 		"tray",
 		"custom/power"
@@ -132,7 +133,19 @@
        "exec-if": "pgrep spotify",
        "on-click":"playerctl --player=spotify play-pause",
        "escape": true
-
+    },
+    "network": {
+	"interface": "wlan0",
+	"format": "{ifname}",
+	"format-wifi": "({signalStrength}%) ",
+	"format-ethernet": "{ifname} ",
+	"format-disconnected": "", //An empty format will hide the module.
+	"format-disconnected": "",
+	"tooltip-format": "{ifname}",
+	"tooltip-format-wifi": "{ifname} ({signalStrength}%) ",
+	"tooltip-format-ethernet": "{ifname} ",
+	"tooltip-format-disconnected": "Disconnected",
+	"max-length": 50
     },
 	"custom/power": {
 		"format": " ⏻ ",

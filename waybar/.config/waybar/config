@@ -142,7 +142,7 @@
 	"format-disconnected": "", //An empty format will hide the module.
 	"format-disconnected": "",
 	"tooltip-format": "{ifname}",
-	"tooltip-format-wifi": "{ifname} ({signalStrength}%) ",
+	"tooltip-format-wifi": "{essid} ({signalStrength}%) ",
 	"tooltip-format-ethernet": "{ifname} ",
 	"tooltip-format-disconnected": "Disconnected",
 	"max-length": 50

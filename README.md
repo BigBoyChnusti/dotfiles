@@ -6,14 +6,17 @@
 
 **DIR Structure**
 stow translates the following structure
+```
 stow
 |-alacritty
     |-.config
         |-alacritty
             |-alacritty.toml
-
+```
 to:
+```
 rootdir where stow lives
 |-.config
     |-alacritty
         |-alacritty.toml
+```

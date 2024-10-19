@@ -17,6 +17,7 @@
 - wofi
 - zsh
 - oh_my_posh
+- neovim
 
 #### DIR Structure
 stow translates the following structure

@@ -1,10 +1,24 @@
-# dotfiles repo
-## powered by stow
-**usage:**
+# Chnuti's dotfiles repo
+### powered by stow
+#### usage:
 - copy repo to /home/"USER"
 - stow "dir to stow"
+- copy BG.jpg to /home/"USER"/Pictures
 
-**DIR Structure**
+#### dotfiles
+- alacritty
+- fastfetch
+- hyprland
+  - hyprpaper
+  - hyprlock
+- swaync
+- waybar
+- wlogout
+- wofi
+- zsh
+- oh_my_posh
+
+#### DIR Structure
 stow translates the following structure
 ```
 stow

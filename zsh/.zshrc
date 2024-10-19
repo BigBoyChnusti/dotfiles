@@ -121,6 +121,10 @@ eval "$(zoxide init zsh)"
 export PATH=$PATH:/home/user1/.spicetify
 export PBS_REPOSITORY=192.168.0.3:data
 
+alias cat="bat"
+alias cp="xcp"
+alias vim="nvim"
+
 
 # bun completions
 [ -s "/home/user1/.bun/_bun" ] && source "/home/user1/.bun/_bun"

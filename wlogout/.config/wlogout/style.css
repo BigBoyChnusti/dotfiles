@@ -8,12 +8,15 @@ window {
 }
 
 button {
-    border-radius: 0;
-    border-color: black;
+    margin-top: 75px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 25px;
+    border-color: #1d2021;
     color: #ebdbb2;
-    background-color: #1d2021;
+    background-color: #3c3836;
     border-style: solid;
-    border-width: 1px;
+    border-width: 3px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 25%;

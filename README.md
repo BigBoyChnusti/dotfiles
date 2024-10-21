@@ -1,5 +1,4 @@
-# Chnuti's dotfiles repo
-### powered by stow
+# Chnusti's dotfiles repo
 #### usage:
 - copy repo to /home/"USER"
 - stow "dir to stow"

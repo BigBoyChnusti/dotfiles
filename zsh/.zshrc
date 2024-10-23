@@ -6,11 +6,6 @@ export PBS_REPOSITORY=192.168.0.3:data
 . "$HOME/.atuin/bin/env"
 . "$HOME/.cargo/env"
 
-# init stuff
-eval "$(atuin init zsh)"
-eval "$(oh-my-posh init zsh --config ~/.gruvbox.omp.json)"
-eval "$(zoxide init zsh)"
-
 
 # zsh Theme (gets overwritten by oh-my-posh)
 ZSH_THEME="arrow"
@@ -25,6 +20,12 @@ plugins=(
 # needs to be here or else stuff breaks
 source $ZSH/oh-my-zsh.sh
 
+# init stuff (moved down cause of atuin breakage)
+eval "$(atuin init zsh)"
+eval "$(oh-my-posh init zsh --config ~/.gruvbox.omp.json)"
+eval "$(zoxide init zsh)"
+
+
 # alias corner
 alias cat="bat"
 alias cp="xcp"
@@ -36,3 +37,9 @@ alias cd="z"
 
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+## [Completion]
+## Completion scripts setup. Remove the following line to uninstall
+[[ -f /home/user1/.dart-cli-completion/zsh-config.zsh ]] && . /home/user1/.dart-cli-completion/zsh-config.zsh || true
+## [/Completion]
+

@@ -24,7 +24,7 @@ source $ZSH/oh-my-zsh.sh
 eval "$(atuin init zsh)"
 eval "$(oh-my-posh init zsh --config ~/.gruvbox.omp.json)"
 eval "$(zoxide init zsh)"
-
+source /usr/share/fzf/completion.zsh
 
 # alias corner
 alias cat="bat"

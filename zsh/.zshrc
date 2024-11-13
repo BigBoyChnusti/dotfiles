@@ -28,7 +28,6 @@ source /usr/share/fzf/completion.zsh
 
 # alias corner
 alias cat="bat"
-alias cp="xcp"
 alias vim="nvim"
 alias cd="z"
 

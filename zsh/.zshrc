@@ -30,6 +30,9 @@ source /usr/share/fzf/completion.zsh
 alias cat="bat"
 alias vim="nvim"
 alias cd="z"
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
 
 # bun stuff for ags testing
 [ -s "/home/user1/.bun/_bun" ] && source "/home/user1/.bun/_bun"
